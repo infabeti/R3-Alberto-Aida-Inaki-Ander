@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const routes = require('./routes/index.js');
 
-// Ajustes del servidor
+// Ajustes del servidor => Ejecutar server = npm run dev
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('puerto', process.env.PORT || 3000);
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 // Rutas
 app.use(routes);
 
-// satic files
+// Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public')));
 
 // bootstraping the app
