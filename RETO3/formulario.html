@@ -1,0 +1,47 @@
+<!DOCTYLE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="EJERCICIOS ">
+	<title>Formulario </title>
+	<link href="estilos/estilos.css" rel="stylesheet">	
+<script> 
+
+function validar()
+{
+
+if (document.formulario.nombre.value.length==0)
+{
+    alert("Debe escribir su puntuación, gracias.")
+    document.formulario.nombre.focus()
+    return 0;
+}
+	alert("Gracias por enviar su opinión.");
+	document.formulario.submit();
+	window.open("index.html");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="formulario">
+<table>
+
+<tr>
+   	<td>Puntua el establecimiento (1-10): </td>
+   	<td><input type="text" name="nombre" size="30" maxlength="100"></td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center">
+	<input type="button" value="Entrar" onclick= "validar()" >
+	</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
