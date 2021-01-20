@@ -63,8 +63,8 @@ ul, ol {
   height: 100px;
   margin: 0;
   padding: 0;
-  background: #C0C0C0 url("../imagenes/cabecera.jpg") no-repeat;
-  color: #C0C0C0;
+  background: #0A369D url("../imagenes/cabecera.jpg") no-repeat;
+  color: #0A369D;
 }
 
 #contenido {
@@ -131,9 +131,15 @@ ul, ol {
   border: none;
 }
 
+#logo1{
+    width:80px;
+    height:80px;
+    text-align: center;
+    
+}
 /* ---- Menú --------------------------------------------------------------- */
 #menu {
-  background: #808080;
+  background: #4472CA;
   margin: 0 5px;
   padding: 10px 0 0 0;
 }
@@ -155,15 +161,15 @@ ul, ol {
   position: relative;
   padding: 5px 15px;
   border: 0;
-  background: #A9A9A9;
-  color: #B5C4E3;
+  background: #CFDEE7;
+  color: #4472CA;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
 
 #menu ul li a:hover {
-  background: #31479B;
+  background: #4472CA;
 }
 
 #menu ul li.seleccionado a {
@@ -252,6 +258,12 @@ ul, ol {
 #contenido #secundario li.seleccionado a {
   background: #E0E8FA url("../imagenes/icono_elemento_seleccionado.gif") 8px no-repeat;
   font-weight: bold;
+}
+
+#peque {
+    width:300px;
+    height:300px;
+    
 }
 
 /* ---- Pie ---------------------------------------------------------------- */
