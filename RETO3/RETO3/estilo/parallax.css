@@ -30,7 +30,7 @@ section {
   z-index: 1;
   height: 100vh;
   font-size: 5rem;
-  background-image: url("foto.jpg");
+  background-image: url("../imagenes/foto.jpg");
   color: #0056a7;
 } 
 
