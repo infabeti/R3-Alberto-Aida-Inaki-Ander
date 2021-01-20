@@ -1,39 +1,57 @@
-<!DOCTYLE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="EJERCICIOS ">
-	<title>Formulario </title>
-	<link href="estilos/estilos.css" rel="stylesheet">	
-<script> 
 
-function validar()
-{
-
-if (document.formulario.nombre.value.length==0)
-{
-    alert("Debe escribir su puntuación, gracias.")
-    document.formulario.nombre.focus()
-    return 0;
-}
-	alert("Gracias por enviar su opinión.");
-	document.formulario.submit();
-	window.open("index.html");
-}
-
-</script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="es" />
+<meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
+<title>RETO 3</title>
+<meta name="description" content="Mi sitio web" />
+<meta name="keywords" content="sitio, web" />
+<link rel="index" href="./" title="Inicio" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="estilo/Index.css" />
+<script type="text/javascript" src="script/formuario.js"></script>
 
 </head>
 
 <body>
 
+
+<div id="contenedor">
+
+<div id="cabecera">
+
+<h1 id="logo" ><a  title="Mi sitio web">Lo que buscas se encuentra en un solo lugar ¡Aquí!</a></h1>
+
+<div id="buscador">
+<form>
+<img id="logo1" src="imagenes/IAAA.png">
+</form>
+</div> 
+<div class="clear"></div>
+</div> 
+
+<div id="menu">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li class="seleccionado"><a href="bares.html">BARES</a></li>
+<li><a href="restaurantes.html">RESTAURANTES</a></li>
+<li><a href="cafeteria.html">CAFETERIA</a></li>
+<li><a href="formulario.html">FORMULARIO</a></li>
+</ul>
+<div class="clear"></div>
+</div> 
+
+<br> <br>
 <form name="formulario">
 <table>
 
 <tr>
-   	<td>Puntua el establecimiento (1-10): </td>
+   	<td><h3>Puntua el establecimiento (1-10): </h3></td>
    	<td><input type="text" name="nombre" size="30" maxlength="100"></td>
 </tr>
+
+
 
 <tr>
 	<td colspan="2" align="center">
@@ -43,5 +61,11 @@ if (document.formulario.nombre.value.length==0)
 
 </table>
 </form>
+
+
+<div id="pie">
+<p id="copyright">&copy; RETO 3 / IAAA</p>
+</div> 
+</div> 
 </body>
 </html>
