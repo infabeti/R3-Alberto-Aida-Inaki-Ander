@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0056a7, #165fa3, #477aaa);
+  font-family: "Courgette", cursive;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  color: #eee;
+  z-index: -1;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100vh;
+  font-size: 5rem;
+  background-image: url("../imagenes/foto.jpg");
+  color: #0056a7;
+} 
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+.animate-me {
+  animation: bounceIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
