@@ -1,10 +1,19 @@
 
-const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
+try {
+	  const express = require('express');
+	const path = require('path');
+	const bodyParser = require('body-parser');
 
-const app = express();
-const routes = require('./routes/index.js');
+	const app = express();
+	const routes = require('./routes/index.js');
+
+	} 
+	catch (error) {
+  console.error(error);
+ 
+}
+
+
 
 // Ajustes del servidor => Ejecutar server = npm run dev
 app.set('view engine', 'ejs');
