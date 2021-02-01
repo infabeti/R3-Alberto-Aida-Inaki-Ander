@@ -1,5 +1,5 @@
 
-try {
+
 	  const express = require('express');
 	const path = require('path');
 	const bodyParser = require('body-parser');
@@ -7,11 +7,7 @@ try {
 	const app = express();
 	const routes = require('./routes/index.js');
 
-	} 
-	catch (error) {
-  console.error(error);
- 
-}
+
 
 
 

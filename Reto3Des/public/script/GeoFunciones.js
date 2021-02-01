@@ -1,9 +1,12 @@
 var map;
-var latitud = 43.28526202942883;
-var longitud = -2.9654809312462738;
+
 $(document).ready(function(){
+  GeoLocalizacion();
+});
+
+function GeoLocalizacion(mapa,latitud,longitud,nombre){
   var map = new GMaps({
-    el: '#map',
+    el: mapa,
     lat: latitud,
     lng: longitud
   });
@@ -13,7 +16,7 @@ $(document).ready(function(){
     lng: longitud,
     title: 'Nombre Bar/Cafeteria/Restaurante',
     infoWindow: {
-      content: '<p>GOIKAR Jatetxea</p>'
+      content: nombre
     }
   });
 
@@ -39,14 +42,14 @@ $(document).ready(function(){
       });
     },
     error: function(error){
-      alert('Geolocation failed: '+error.message);
+      alert('La Geolocalización ha fallado: '+error.message);
     },
     not_supported: function(){
       alert("Tu buscador no es compatible con la Geolocalización");
     },
     always: function(){
-      
+    //  alert("Tenemos tu ubicacion!!");
     }
   });
 
-});
+}
